@@ -1,0 +1,239 @@
+/*--------------------------------------------- MAIN CONTAINER ---------------------------------------------*/
+.container {
+  width: 70%;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+/*-------------------------- NAV --------------------------*/
+#nav-container {
+  width: 70%;
+  margin: 0 auto;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/*-------------------------- MAIN CONTENT --------------------------*/
+#main_content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  align-items: start;
+  overflow: visible;
+}
+
+/*-------------------------- PROFILE CARD --------------------------*/
+#profileCard-container {
+  grid-area: 1 / 1 / 2 / 2;
+  position: sticky;
+  top: 120px;
+}
+
+/*-------------------------- ABOUT CARD --------------------------*/
+#brainstorming-card {
+  grid-area: 1 / 2 / 2 / 4;
+  background-color: var(--cLightCard);
+  -webkit-box-shadow: var(--boxShadow);
+  -moz-box-shadow: var(--boxShadow);
+  box-shadow: var(--boxShadow);
+  border-radius: 20px;
+  position: relative;
+  padding: 13px;
+  overflow: hidden;
+}
+#brainstorming-card img {
+  margin: 5% 0;
+  width: 100%;
+}
+
+#brainstorming-card h1 {
+  font-family: var(--fMain);
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  width: fit-content;
+  margin: 0 auto;
+  border-bottom: 2px solid var(--cSecondary);
+  color: var(--cMainText);
+}
+#brainstorming-card h3 {
+  font-family: var(--fMain);
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--cMainText);
+}
+
+.full_list {
+  width: 98%;
+  margin: 0 auto;
+}
+.full_list h2 {
+  font-family: var(--fMain);
+  font-size: 1.5rem;
+  color: var(--cMainText);
+  text-indent: 10px;
+}
+.full_list p {
+  font-family: var(--fSub);
+  font-size: 1.05rem;
+  color: var(--cMainText);
+}
+
+/* ------------------------------------ RESPONSIVE ------------------------------------ */
+
+/* --------------------------------1730 */
+@media (max-width: 1730px) {
+  .container,
+  #nav-container {
+    width: 90%;
+  }
+}
+
+/* --------------------------------1436 */
+@media (max-width: 1436px) {
+  #call,
+  #email {
+    padding: 15px 20px;
+  }
+}
+
+/* --------------------------------1340 */
+@media (max-width: 1340px) {
+  .container,
+  #nav-container {
+    width: 95%;
+  }
+}
+
+/* --------------------------------1237 */
+@media (max-width: 1273px) {
+  #call,
+  #email {
+    padding: 10px 15px;
+  }
+}
+
+/* --------------------------------1044 */
+@media (max-width: 1044px) {
+  #main_content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+  }
+  #profileCard-container {
+    grid-area: auto;
+    position: relative;
+    top: 0;
+  }
+  #brainstorming-card {
+    grid-area: auto;
+  }
+  #nav-container {
+    position: relative;
+  }
+
+  .blush-1,
+  .blush-2 {
+    display: none;
+  }
+
+  .hyperlinks a,
+  .contact_selector {
+    display: none;
+  }
+  .nav_bars {
+    display: block;
+  }
+
+  .button_wrapper {
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+  }
+  #call,
+  #email {
+    padding: 25px 30px;
+  }
+}
+
+/* --------------------------------440 */
+@media (max-width: 440px) {
+  .logo_icon {
+    width: 40px;
+    height: 40px;
+  }
+  .logo h5 {
+    font-size: 1.6rem;
+  }
+
+  .mode_selector button,
+  .nav_bars button {
+    font-size: 0.7em;
+    padding: 13px 8px;
+  }
+
+  #call,
+  #email {
+    padding: 20px 15px;
+  }
+
+  #brainstorming-card h1 {
+    font-size: 1.8rem;
+  }
+  #brainstorming-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .full_list h2 {
+    font-size: 1.3rem;
+  }
+  .full_list p {
+    font-size: 1rem;
+  }
+}
+
+/* --------------------------------385 */
+@media (max-width: 385px) {
+  .logo_icon {
+    width: 35px;
+    height: 35px;
+  }
+  .logo h5 {
+    font-size: 1.4rem;
+  }
+
+  .contact_me {
+    gap: 5px;
+  }
+  .mode_selector button,
+  .nav_bars button {
+    font-size: 0.6em;
+  }
+
+  #call,
+  #email {
+    padding: 15px 20px;
+  }
+  .button_wrapper {
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+  }
+}
+
+/* --------------------------------335 */
+@media (max-width: 335px) {
+  .button_wrapper {
+    width: 100%;
+  }
+}
+
+/* --------------------------------300 */
+@media (max-width: 300px) {
+  .mode_selector button,
+  .nav_bars button {
+    font-size: 0.4em;
+  }
+}

@@ -1,0 +1,132 @@
+:root {
+  --fMain: "Exo 2", sans-serif;
+  --fSub: "Red Hat Text", sans-serif;
+
+  --cMain: #202020;
+  --cSecondary: #298598;
+
+  --cMainText: #000000;
+  --cSubText: #202020;
+
+  --cModeDarkBg: #0f1119;
+
+  --cModeLightBg: #e4e4e4;
+  --cLightCard: #fbfbfb;
+  --cMainLight: #d8d8d8;
+  --cMainUltraLight: #dfdfdf;
+
+  --boxShadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+}
+
+/*--------------------------------------------- MAIN CONTAINER ---------------------------------------------*/
+.container {
+  width: 70%;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+/*-------------------------- NAV --------------------------*/
+#nav-container {
+  width: 70%;
+  margin: 0 auto;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/*-------------------------- MAIN CONTENT --------------------------*/
+#main_content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  align-items: start;
+  overflow: visible;
+}
+
+/*-------------------------- PROFILE CARD --------------------------*/
+#profileCard-container {
+  grid-area: 1 / 1 / 2 / 2;
+  position: sticky;
+  top: 120px;
+}
+
+/*-------------------------- ABOUT CARD --------------------------*/
+#projects-card {
+  grid-area: 1 / 2 / 2 / 4;
+  background-color: var(--cLightCard);
+  -webkit-box-shadow: var(--boxShadow);
+  -moz-box-shadow: var(--boxShadow);
+  box-shadow: var(--boxShadow);
+  border-radius: 20px;
+  position: relative;
+  padding: 13px;
+  overflow: hidden;
+}
+
+#projects-card h1 {
+  font-family: var(--fMain);
+  font-size: 2rem;
+  line-height: 3%;
+  color: var(--cMainText);
+}
+#projects-card h2 {
+  font-family: var(--fMain);
+  font-size: 1.7rem;
+  line-height: 3%;
+  color: var(--cMainText);
+  text-align: start;
+}
+
+.project1-2_wrapper,
+.project3-4_wrapper,
+.project5-6_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.project3-4_wrapper,
+.project5-6_wrapper {
+  margin-top: 20px;
+}
+.proj {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 100px;
+  min-width: 100px;
+  position: relative;
+  background-color: var(--cMainUltraLight);
+  padding: 5px 10px 10px;
+  border-radius: 20px;
+}
+.proj img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.proj a {
+  text-decoration: none;
+  font-family: var(--fMain);
+  font-size: 1.5rem;
+  color: var(--cMainText);
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--cSecondary);
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid var(--cSecondary);
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  display: none;
+}
+.proj a:hover {
+  background-color: transparent;
+  backdrop-filter: blur(2px);
+  font-weight: 700;
+}
+.project:hover a {
+  display: block;
+}

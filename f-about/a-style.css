@@ -1,0 +1,164 @@
+/*--------------------------------------------- MAIN CONTAINER ---------------------------------------------*/
+.container {
+  width: 70%;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+/*-------------------------- NAV --------------------------*/
+#nav-container {
+  width: 70%;
+  margin: 0 auto;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/*-------------------------- MAIN CONTENT --------------------------*/
+#main_content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  align-items: start;
+  overflow: visible;
+}
+
+/*-------------------------- PROFILE CARD --------------------------*/
+#profileCard-container {
+  grid-area: 1 / 1 / 2 / 2;
+  position: sticky;
+  top: 120px;
+}
+
+/*-------------------------- ABOUT CARD --------------------------*/
+#about-card {
+  grid-area: 1 / 2 / 2 / 4;
+  background-color: var(--cLightCard);
+  -webkit-box-shadow: var(--boxShadow);
+  -moz-box-shadow: var(--boxShadow);
+  box-shadow: var(--boxShadow);
+  border-radius: 20px;
+  position: relative;
+  padding: 13px;
+  overflow: hidden;
+}
+
+@keyframes pulseAnim {
+  0% {
+    opacity: 0.8;
+    transform: scale(0.2);
+  }
+
+  50% {
+    opacity: 0;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(2.2);
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  color: var(--cMainText);
+}
+.title h1 {
+  font-family: var(--fMain);
+  color: var(--cMainText);
+  font-size: 2rem;
+  line-height: 3%;
+}
+.title h1 span {
+  color: var(--cSecondary);
+  position: relative;
+}
+.title h1 span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid var(--cSecondary);
+}
+
+.job_alert {
+  background-color: var(--cMainUltraLight);
+  border-radius: 20px;
+  padding: 0 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--cMainText);
+}
+.job_alert p {
+  font-family: var(--fSub);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1%;
+}
+.circle {
+  height: 10px;
+  width: 10px;
+  background-color: var(--cSecondary);
+  border-radius: 50%;
+  position: relative;
+}
+.circle::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: var(--cSecondary);
+  border-radius: 50%;
+  opacity: 0.5;
+  top: -50%;
+  left: -50%;
+  transform: translate(-50%, -50%);
+  animation: pulseAnim 1.5s ease 0s infinite normal forwards;
+}
+
+.sub_title {
+  font-family: var(--fSub);
+  font-size: 1.3rem;
+  color: var(--cMainText);
+}
+
+.comadations {
+  margin: 5% 0 3%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  color: var(--cMainText);
+}
+.card h2 {
+  font-family: var(--fMain);
+  font-size: 2rem;
+  line-height: 3%;
+}
+.card p {
+  font-family: var(--fSub);
+  font-size: 1.1rem;
+}
+
+#brainstorming {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  color: var(--cMainText);
+}
+
+.brainstorming_image img {
+  width: 100%;
+}
+
+.brainstorming_info {
+  font-family: var(--fSub);
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: var(--cMainText);
+}

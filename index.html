@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- prettier-ignore -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore the portfolio of Emir WebDevs., a versatile web developer and designer specializing in modern web solutions.">
+    <meta name="keywords" content="web developer, web designer, portfolio, Emir WebDevs, modern web portfolio, web development, web design, web solutions, web services">
+    
+    <meta property="og:title" content="Emir WebDevs | Web Developer & Designer Portfolio">
+    <meta property="og:description" content="Showcasing the projects and skills of Emir WebDevs, a dedicated web professional.">
+    <meta property="og:image" content="URL_to_image">
+    <meta property="og:url" content="https://emir-portfolio.pages.dev">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Emir WebDevs | Web Developer & Designer Portfolio">
+    <meta name="twitter:description" content="Discover the work of Emir WebDevs, specializing in web development and design.">
+    <meta name="twitter:image" content="URL_to_image">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/m-images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/m-images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/m-images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/m-images/favicon/site.webmanifest">
+
+
+    <title>Emir Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="!getMainItems/!getMainItems.css" />
+    <script src="https://kit.fontawesome.com/00106cbec8.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <!----------------------------------------------------- LOADING ANIMTION ----------------------------------------------------->
+    <div id="loader">
+      <video autoplay muted playsinline id="loader-video">
+        <source id="video-source" src="/!Emir-Portfolio-Loading-Animation_light.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <!----------------------------------------------------- MAIN CONTAINER ----------------------------------------------------->
+    <!-------------------- NAV -------------------->
+    <div id="nav-container"></div>
+
+    <div class="container">
+      <!-------------------- MAIN CONTENT -------------------->
+      <div class="main_content">
+        <!---->
+        <!-- PROFILE -->
+        <div id="profileCard-container"></div>
+        <!---->
+        <!-- WORK EXPERIENCE -->
+        <!---->
+        <section id="work_experience">
+          <div class="work_experience_wrapper">
+            <h1>Work Experience</h1>
+            <div class="work work1">
+              <p class="year">2020-2022</p>
+              <div class="job_wrapper">
+                <span> <i class="fa-solid fa-shirt fa-xl"></i> </span>
+                <div class="job_des">
+                  <p class="job_status">Self Employed</p>
+                  <p>Freelance Clothing Designer</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="work work2">
+              <p class="year">2022-2024</p>
+              <div class="job_wrapper">
+                <span> <i class="fa-solid fa-code fa-xl"></i> </span>
+                <div class="job_des">
+                  <p class="job_status">Self Employed</p>
+                  <p>Freelance Web Developer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!---->
+        <!-- EXPERT AREA -->
+        <!---->
+        <section id="expert_area">
+          <div class="expert_area_wrapper">
+            <h1>My Expert Area</h1>
+
+            <div class="area_wrapper">
+              <div class="area area1">
+                <div class="area_image_holder a_i_holder1">
+                  <img draggable="false" src="m-images/exper-areas/Figma_icon.png" alt="Logo of Figma" />
+                </div>
+                <p>Figma</p>
+              </div>
+
+              <div class="area area2">
+                <div class="area_image_holder a_i_holder2">
+                  <img draggable="false" src="m-images/exper-areas/Adobe_Photoshop_icon.png" alt="Logo of Photoshop" />
+                </div>
+                <p>Photoshop</p>
+              </div>
+
+              <div class="area area3">
+                <div class="area_image_holder a_i_holder3">
+                  <img
+                    draggable="false"
+                    src="m-images/exper-areas/Adobe_Illustrator_icon.png"
+                    alt="Logo of Illustrator"
+                  />
+                </div>
+                <p>Illustrator</p>
+              </div>
+
+              <div class="area area4">
+                <div class="area_image_holder a_i_holder4">
+                  <img draggable="false" src="m-images/exper-areas/VS_Code_icon.png" alt="Logo of VS Code" />
+                </div>
+                <p>VS Code</p>
+              </div>
+
+              <div class="area area5">
+                <div class="area_image_holder a_i_holder5"></div>
+              </div>
+
+              <div class="area area6">
+                <div class="area_image_holder a_i_holder6"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!---->
+        <!-- PROJECTS -->
+        <!---->
+        <aside id="projects">
+          <div class="projects_wrapper">
+            <div class="project_title">
+              <h1>Recent Projects</h1>
+              <a href="f-projects/index.html">All projects <i class="fa-solid fa-arrow-trend-up"></i></a>
+            </div>
+
+            <div class="project_showcase">
+              <div class="project project1">
+                <img draggable="false" src="m-images/projects/Dzejla-Makeup.png" alt="Project 1" />
+                <p id="text">Makeup Showcase</p>
+                <button class="showImage showImage-1"><i class="fa-solid fa-circle-plus fa-3x"></i></button>
+              </div>
+              <div class="project project2">
+                <img draggable="false" src="m-images/projects/Gia-personal_trainer.png" alt="Project 2" />
+                <p>Personal Trainer</p>
+                <button class="showImage showImage-2"><i class="fa-solid fa-circle-plus fa-3x"></i></button>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <!---->
+      </div>
+
+      <button class="showImage showImage-1"><i class="fa-solid fa-circle-plus fa-3x"></i></button>
+      <button class="showImage showImage-2"><i class="fa-solid fa-circle-plus fa-3x"></i></button>
+
+      <div class="f_imgae fullscrean_image1 hiddenFullscreanImage">
+        <div class="fullscrean_info">
+          <h1>Makeup Website</h1>
+          <button class="closeImageIcon"><i class="fa-regular fa-circle-xmark fa-3x"></i></button>
+        </div>
+        <img draggable="false" src="m-images/projects/Dzejla-Makeup.png" alt="Makeup Website image" />
+      </div>
+
+      <div class="f_imgae fullscrean_image2 hiddenFullscreanImage">
+        <div class="fullscrean_info">
+          <h1>Personal Trainer Website</h1>
+          <button class="closeImageIcon"><i class="fa-regular fa-circle-xmark fa-3x"></i></button>
+        </div>
+        <img draggable="false" src="m-images/projects/Gia-personal_trainer.png" alt="Personal Trainer image" />
+      </div>
+
+      <!-------------------- LOWER CONTENT -------------------->
+      <div class="lower_content">
+        <!---->
+        <!-- SERVICES -->
+        <section id="services">
+          <div class="services_wrapper">
+            <h1>Services I offer</h1>
+
+            <div class="service_card_wrapper">
+              <div class="service_card">
+                <div class="service_icon_holder">
+                  <i class="fa-regular fa-file-code fa-4x"></i>
+                </div>
+                <p><span>Web</span> Developer</p>
+              </div>
+
+              <div class="service_card">
+                <div class="service_icon_holder">
+                  <i class="fa-regular fa-eye fa-4x"></i>
+                </div>
+                <p>Eye to detail</p>
+              </div>
+
+              <div class="service_card">
+                <div class="service_icon_holder">
+                  <i class="fa-regular fa-object-group fa-4x"></i>
+                </div>
+                <p>UI UX Design</p>
+              </div>
+
+              <div class="service_card">
+                <div class="service_icon_holder">
+                  <i class="fa-regular fa-pen-to-square fa-4x"></i>
+                </div>
+                <p>Web Designer</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!---->
+        <!-- LETS WORK -->
+        <!---->
+        <section id="lets_work">
+          <div class="lets_work_wrapper">
+            <div class="slider_wrapper">
+              <div class="slide_text">
+                <span>Availabele for hire🚀 Front-end Web Developer💻</span>
+              </div>
+            </div>
+
+            <h1>
+              Let's Work <br />
+              TOGETHER
+            </h1>
+
+            <a href="mailto:emir.webdevs@gmail.com?subject=Let's%20Talk&body=Hi%20Emir,%20I%20want%20to%20discuss...">
+              Let's Talk <i class="fa-solid fa-arrow-trend-up"></i>
+            </a>
+          </div>
+        </section>
+        <!---->
+      </div>
+
+      <div id="footer-container"></div>
+    </div>
+
+    <script src="script.js "></script>
+    <script src="!getMainItems_fetch.js"></script>
+  </body>
+</html>

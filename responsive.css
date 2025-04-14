@@ -1,0 +1,287 @@
+/* --------------------------------1730 */
+@media (max-width: 1730px) {
+  .container,
+  #nav-container {
+    width: 90%;
+  }
+}
+
+/* --------------------------------1436 */
+@media (max-width: 1436px) {
+  #call,
+  #email {
+    padding: 15px 20px;
+  }
+}
+
+/* --------------------------------1340 */
+@media (max-width: 1340px) {
+  .container,
+  #nav-container {
+    width: 95%;
+  }
+}
+
+/* --------------------------------1237 */
+@media (max-width: 1273px) {
+  #call,
+  #email {
+    padding: 10px 15px;
+  }
+  .projects_wrapper h1 {
+    font-size: 1.6rem;
+  }
+}
+
+/* --------------------------------1197 */
+@media (max-width: 1197px) {
+  .area5,
+  .area6 {
+    display: none;
+  }
+  .project_title a {
+    font-size: 1rem;
+  }
+  .service_card span {
+    display: none;
+  }
+}
+
+/* --------------------------------1044 */
+@media (max-width: 1044px) {
+  .main_content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+  }
+  #profile,
+  #expert_area,
+  #work_experience,
+  #projects {
+    grid-area: unset;
+  }
+  .lower_content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+  }
+
+  .hyperlinks a,
+  .contact_selector {
+    display: none;
+  }
+  .nav_bars {
+    display: block;
+  }
+
+  .button_wrapper {
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+  }
+  #call,
+  #email {
+    padding: 25px 30px;
+  }
+
+  .projects_wrapper h1 {
+    font-size: 2rem;
+  }
+  .project_title a {
+    font-size: 1.2rem;
+  }
+  .project_showcase {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 1000px;
+    margin-top: 5%;
+  }
+
+  #services,
+  #lets_work {
+    grid-area: unset;
+  }
+  .service_card p {
+    line-height: 100%;
+  }
+  .service_card span {
+    display: inline;
+  }
+}
+
+/* --------------------------------768 */
+@media (max-width: 768px) {
+  .project_showcase {
+    height: 750px;
+  }
+}
+/* --------------------------------700 */
+
+@media (max-width: 700px) {
+  .project_showcase {
+    height: 750px;
+  }
+  .service_card span {
+    display: none;
+  }
+}
+
+/* --------------------------------637 */
+@media (max-width: 637px) {
+  .fullscrean_info,
+  .fullscrean_image1 img,
+  .fullscrean_image2 img {
+    width: 90%;
+  }
+
+  #services {
+    height: auto;
+  }
+  .service_card_wrapper {
+    margin-top: 5%;
+  }
+  .service_card {
+    height: 200px;
+  }
+  .service_card span {
+    display: inline;
+  }
+}
+
+/* --------------------------------550 */
+@media (max-width: 550px) {
+  .project_showcase {
+    height: 550px;
+  }
+}
+
+/* --------------------------------511 */
+@media (max-width: 511px) {
+  .area5,
+  .area6 {
+    display: block;
+  }
+
+  .fullscrean_info h1 {
+    line-height: 100%;
+    font-size: 1.5rem;
+  }
+  .service_card span {
+    display: none;
+  }
+}
+
+/* --------------------------------440 */
+@media (max-width: 440px) {
+  .logo_icon {
+    width: 40px;
+    height: 40px;
+  }
+  .logo h5 {
+    font-size: 1.6rem;
+  }
+
+  .mode_selector button,
+  .nav_bars button {
+    font-size: 0.7em;
+    padding: 13px 8px;
+  }
+
+  #call,
+  #email {
+    padding: 20px 15px;
+  }
+
+  .projects_wrapper h1 {
+    font-size: 1.9rem;
+  }
+  .project_title a {
+    font-size: 1.1rem;
+  }
+  .project_showcase {
+    height: 450px;
+  }
+  .service_card span {
+    display: inline;
+  }
+}
+
+/* --------------------------------385 */
+@media (max-width: 385px) {
+  .logo_icon {
+    width: 35px;
+    height: 35px;
+  }
+  .logo h5 {
+    font-size: 1.4rem;
+  }
+
+  .contact_me {
+    gap: 5px;
+  }
+  .mode_selector button,
+  .nav_bars button {
+    font-size: 0.6em;
+  }
+
+  #call,
+  #email {
+    padding: 15px 20px;
+  }
+  .button_wrapper {
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+  }
+
+  .area5,
+  .area6 {
+    display: none;
+  }
+
+  .project_title {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  @-webkit-keyframes marquee {
+    0% {
+      -webkit-transform: translate(60%, 0);
+      transform: translate(60%, 0);
+    }
+  }
+
+  @keyframes marquee {
+    0% {
+      -webkit-transform: translate(60%, 0);
+      transform: translate(60%, 0);
+    }
+  }
+}
+
+/* --------------------------------335 */
+@media (max-width: 335px) {
+  .button_wrapper {
+    width: 100%;
+  }
+
+  .project_showcase {
+    height: 350px;
+  }
+}
+
+/* --------------------------------300 */
+@media (max-width: 300px) {
+  .container h1,
+  .work .job_status,
+  .container p,
+  .slide_text span {
+    line-height: 100%;
+  }
+
+  .mode_selector button,
+  .nav_bars button {
+    font-size: 0.4em;
+  }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirmation</title>
+    <link rel="stylesheet" href="../../!getMainItems_fetch.js" />
+    <script src="https://kit.fontawesome.com/00106cbec8.js" crossorigin="anonymous"></script>
+
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+        background-color: var(--cModeLightBg);
+        transition: background-color 0.3s, color 0.3s;
+        height: 100vh;
+      }
+
+      :root {
+        --fMain: "Exo 2", sans-serif;
+        --fSub: "Red Hat Text", sans-serif;
+
+        --cMain: #202020;
+        --cSecondary: #298598;
+
+        --cMainText: #000000;
+        --cSubText: #202020;
+
+        --cModeDarkBg: #0f1119;
+
+        --cModeLightBg: #e4e4e4;
+        --cLightCard: #fbfbfb;
+        --cMainLight: #d8d8d8;
+        --cMainUltraLight: #dfdfdf;
+      }
+
+      /*--------------------------------------------- LIGHT/DARK mode ---------------------------------------------*/
+      .darkModeToggled {
+        --cMain: #e4e4e4;
+
+        --cMainText: #ffffff;
+        --cSubText: #757575;
+
+        --cModeLightBg: #0f1119;
+        --cLightCard: #0b0b0e;
+        --cMainLight: #111116;
+        --cMainUltraLight: #17171d;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      main i {
+        font-size: 10rem;
+        color: var(--cSecondary);
+      }
+      main h1 {
+        font-family: var(--fMain);
+        font-size: 2rem;
+        color: var(--cMainText);
+      }
+      main p {
+        font-family: var(--fSub);
+        width: 40%;
+        text-align: center;
+        color: var(--cMainText);
+      }
+      main a {
+        font-family: var(--fSub);
+        font-size: 2rem;
+        color: var(--cMainText);
+      }
+
+      @media (max-width: 770px) {
+        main p {
+          width: 70%;
+        }
+      }
+      @media (max-width: 470px) {
+        main h1 {
+          font-size: 1.7rem;
+          text-align: center;
+        }
+        main p {
+          width: 90%;
+        }
+        main a {
+          font-family: var(--fSub);
+          font-size: 1.7rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <i class="fa-regular fa-circle-check"></i>
+      <h1>Thank You for Your Message!</h1>
+      <p>I appreciate you reaching out. I’ll get back to you as soon as possible—usually within 24-48 hours.</p>
+      <a href="../f-contact/index.html">Go back</a>
+    </main>
+  </body>
+</html>

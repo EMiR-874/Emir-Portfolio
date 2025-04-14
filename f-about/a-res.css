@@ -1,0 +1,171 @@
+/* --------------------------------1730 */
+@media (max-width: 1730px) {
+  .container,
+  #nav-container {
+    width: 90%;
+  }
+}
+
+/* --------------------------------1436 */
+@media (max-width: 1436px) {
+  #call,
+  #email {
+    padding: 15px 20px;
+  }
+}
+
+/* --------------------------------1340 */
+@media (max-width: 1340px) {
+  .container,
+  #nav-container {
+    width: 95%;
+  }
+}
+
+/* --------------------------------1237 */
+@media (max-width: 1273px) {
+  #call,
+  #email {
+    padding: 10px 15px;
+  }
+}
+
+/* --------------------------------1044 */
+@media (max-width: 1044px) {
+  #main_content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+  }
+  #profileCard-container {
+    grid-area: auto;
+    position: relative;
+    top: 0;
+  }
+  #about-card {
+    grid-area: auto;
+  }
+  #nav-container {
+    position: relative;
+  }
+
+  .hyperlinks a,
+  .contact_selector {
+    display: none;
+  }
+  .nav_bars {
+    display: block;
+  }
+
+  .button_wrapper {
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+  }
+  #call,
+  #email {
+    padding: 25px 30px;
+  }
+}
+
+/* --------------------------------700 */
+@media (max-width: 700px) {
+  .title {
+    flex-direction: column-reverse;
+  }
+  .job_alert {
+    width: fit-content;
+  }
+}
+
+/* --------------------------------488 */
+@media (max-width: 488px) {
+  .title h1 {
+    line-height: 100%;
+  }
+
+  .sub_title {
+    font-size: 1.1rem;
+  }
+  .comadations {
+    margin: 7% 0 5%;
+    justify-content: space-between;
+  }
+}
+
+/* --------------------------------440 */
+@media (max-width: 440px) {
+  .logo_icon {
+    width: 40px;
+    height: 40px;
+  }
+  .logo h5 {
+    font-size: 1.6rem;
+  }
+
+  .mode_selector button,
+  .nav_bars button {
+    font-size: 0.7em;
+    padding: 13px 8px;
+  }
+
+  #call,
+  #email {
+    padding: 20px 15px;
+  }
+
+  .brainstorming_info {
+    font-size: 1.1rem;
+  }
+
+  .card h2 {
+    font-size: 1.5rem;
+  }
+  .card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* --------------------------------385 */
+@media (max-width: 385px) {
+  .logo_icon {
+    width: 35px;
+    height: 35px;
+  }
+  .logo h5 {
+    font-size: 1.4rem;
+  }
+
+  .contact_me {
+    gap: 5px;
+  }
+  .mode_selector button,
+  .nav_bars button {
+    font-size: 0.6em;
+  }
+
+  #call,
+  #email {
+    padding: 15px 20px;
+  }
+  .button_wrapper {
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+  }
+}
+
+/* --------------------------------335 */
+@media (max-width: 335px) {
+  .button_wrapper {
+    width: 100%;
+  }
+}
+
+/* --------------------------------300 */
+@media (max-width: 300px) {
+  .mode_selector button,
+  .nav_bars button {
+    font-size: 0.4em;
+  }
+}

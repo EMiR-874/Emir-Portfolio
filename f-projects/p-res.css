@@ -1,0 +1,164 @@
+/* --------------------------------1730 */
+@media (max-width: 1730px) {
+  .container,
+  #nav-container {
+    width: 90%;
+  }
+}
+
+/* --------------------------------1436 */
+@media (max-width: 1436px) {
+  #call,
+  #email {
+    padding: 15px 20px;
+  }
+}
+
+/* --------------------------------1340 */
+@media (max-width: 1340px) {
+  .container,
+  #nav-container {
+    width: 95%;
+  }
+}
+
+/* --------------------------------1237 */
+@media (max-width: 1273px) {
+  #call,
+  #email {
+    padding: 10px 15px;
+  }
+}
+
+/* --------------------------------1044 */
+@media (max-width: 1044px) {
+  #main_content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+  }
+  #profileCard-container {
+    grid-area: auto;
+    position: relative;
+    top: 0;
+  }
+  #projects-card {
+    grid-area: auto;
+  }
+  #nav-container {
+    position: relative;
+  }
+
+  .hyperlinks a,
+  .contact_selector {
+    display: none;
+  }
+  .nav_bars {
+    display: block;
+  }
+
+  .button_wrapper {
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+  }
+  #call,
+  #email {
+    padding: 25px 30px;
+  }
+}
+
+/* --------------------------------890 */
+@media (max-width: 890px) {
+  .proj a {
+    font-size: 1.2rem;
+  }
+  .proj a {
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+  }
+}
+/* --------------------------------723 */
+@media (max-width: 723px) {
+  .proj {
+    min-width: 300px;
+  }
+}
+
+/* --------------------------------440 */
+@media (max-width: 440px) {
+  .logo_icon {
+    width: 40px;
+    height: 40px;
+  }
+  .logo h5 {
+    font-size: 1.6rem;
+  }
+
+  .mode_selector button,
+  .nav_bars button {
+    font-size: 0.7em;
+    padding: 13px 8px;
+  }
+
+  #call,
+  #email {
+    padding: 20px 15px;
+  }
+}
+
+/* --------------------------------385 */
+@media (max-width: 385px) {
+  .logo_icon {
+    width: 35px;
+    height: 35px;
+  }
+  .logo h5 {
+    font-size: 1.4rem;
+  }
+
+  .contact_me {
+    gap: 5px;
+  }
+  .mode_selector button,
+  .nav_bars button {
+    font-size: 0.6em;
+  }
+
+  #call,
+  #email {
+    padding: 15px 20px;
+  }
+  .button_wrapper {
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+  }
+
+  .proj {
+    min-width: 190px;
+  }
+  .proj a {
+    font-size: 1rem;
+  }
+}
+
+/* --------------------------------335 */
+@media (max-width: 335px) {
+  .button_wrapper {
+    width: 100%;
+  }
+  .proj a {
+    font-size: 1rem;
+    width: 50%;
+    text-align: center;
+  }
+}
+
+/* --------------------------------300 */
+@media (max-width: 300px) {
+  .mode_selector button,
+  .nav_bars button {
+    font-size: 0.4em;
+  }
+}

@@ -1,0 +1,155 @@
+/*--------------------------------------------- FONTS ---------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+
+/*--------------------------------------------- ROOT ---------------------------------------------*/
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: var(--cModeLightBg);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+:root {
+  --fMain: "Exo 2", sans-serif;
+  --fSub: "Red Hat Text", sans-serif;
+
+  --cMain: #202020;
+  --cSecondary: #298598;
+
+  --cMainText: #000000;
+  --cSubText: #202020;
+
+  --cModeDarkBg: #0f1119;
+
+  --cModeLightBg: #e4e4e4;
+  --cLightCard: #fbfbfb;
+  --cMainLight: #d8d8d8;
+  --cMainUltraLight: #dfdfdf;
+}
+
+/*--------------------------------------------- LIGHT/DARK mode ---------------------------------------------*/
+.darkModeToggled {
+  --cMain: #e4e4e4;
+
+  --cMainText: #ffffff;
+  --cSubText: #757575;
+
+  --cModeLightBg: #0f1119;
+  --cLightCard: #0b0b0e;
+  --cMainLight: #111116;
+  --cMainUltraLight: #17171d;
+}
+
+/*--------------------------------------------- MAIN CONTAINER ---------------------------------------------*/
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/*-------------------------- NAV --------------------------*/
+#nav-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/*-------------------------- MAIN CONTENT --------------------------*/
+#main_content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+}
+
+/*-------------------------- PROFILE CARD --------------------------*/
+#profileCard-container {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+/*-------------------------- ABOUT CARD --------------------------*/
+#contact-card {
+  grid-area: 1 / 2 / 2 / 4;
+  background-color: var(--cLightCard);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  border-radius: 20px;
+  position: relative;
+  padding: 13px;
+  overflow: hidden;
+}
+
+#contact-card h1 {
+  font-family: var(--fMain);
+  font-size: 2rem;
+  line-height: 3%;
+  color: var(--cMainText);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.input-container {
+  position: relative;
+  font-family: var(--fMain);
+  color: var(--cMainText);
+}
+.floating-label {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+.input_type {
+  width: 97%;
+  height: 50px;
+  padding: 10px 0 10px 20px;
+  background-color: var(--cModeLightBg);
+  border: none;
+  border-radius: 10px;
+  resize: none;
+  outline: none;
+  font-family: var(--fSub);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--cMainText);
+}
+
+textarea {
+  min-height: 100px;
+}
+textarea::placeholder {
+  color: var(--MainText);
+}
+
+.input_type:focus + .floating-label,
+.input_type.filled + .floating-label {
+  top: 10px;
+  font-size: 0.9rem;
+  color: var(--cSubText);
+}
+
+.input_type:focus {
+  border: 2px solid var(--cSecondary);
+}
+
+form button {
+  background-color: var(--cSecondary);
+  border: none;
+  padding: 20px 10px;
+  border-radius: 10px;
+  font-family: var(--fMain);
+  color: var(--cMainText);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  filter: brightness(0.9);
+}
